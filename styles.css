@@ -282,6 +282,205 @@ img:hover {
     animation: slideInUp 0.8s ease-out forwards;
 }
 
+/* Mobile Navigation */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+    z-index: 40;
+}
+
+.mobile-menu.active {
+    display: flex;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Mobile Breakpoint 768px */
+@media (max-width: 768px) {
+    header {
+        padding: 12px 16px !important;
+    }
+
+    header .playfair {
+        font-size: 28px !important;
+    }
+
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    nav {
+        display: none !important;
+    }
+
+    /* Hero Section */
+    .hero {
+        min-height: 60vh !important;
+        margin-top: 60px !important;
+    }
+
+    .hero > div {
+        flex-direction: column !important;
+        gap: 8px !important;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero .oranienbaum {
+        font-size: 48px !important;
+    }
+
+    /* Story Section */
+    .story-text h3 {
+        font-size: 32px !important;
+    }
+
+    .story-text p {
+        font-size: 16px !important;
+    }
+
+    .story-images {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    /* Testimonial Section */
+    .testimonial-text blockquote {
+        font-size: 18px !important;
+    }
+
+    .testimonial-text .author {
+        font-size: 16px !important;
+    }
+
+    /* Eat Together Section */
+    .eat-together {
+        padding: 20px !important;
+    }
+
+    .eat-together h2 {
+        font-size: 42px !important;
+    }
+
+    .eat-together p {
+        font-size: 16px !important;
+    }
+
+    .eat-together button {
+        padding: 12px 24px !important;
+        font-size: 16px !important;
+    }
+
+    /* Footer */
+    footer {
+        padding: 16px 16px !important;
+    }
+
+    footer .grid {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+
+    footer h3 {
+        font-size: 16px !important;
+    }
+
+    footer p {
+        font-size: 14px !important;
+    }
+
+    /* Carousel */
+    .carousel-container {
+        max-width: 95vw !important;
+        max-height: 300px !important;
+    }
+
+    .carousel-slide {
+        height: 300px !important;
+    }
+
+    .carousel-btn {
+        width: 44px !important;
+        height: 44px !important;
+        font-size: 20px !important;
+    }
+
+    .carousel-dots .dot {
+        width: 10px !important;
+        height: 10px !important;
+    }
+
+    /* Menu items */
+    .menu-item {
+        flex-direction: column !important;
+    }
+
+    .menu-item-image {
+        width: 100% !important;
+    }
+
+    .menu-item h4 {
+        font-size: 20px !important;
+    }
+
+    .menu-item p {
+        font-size: 14px !important;
+    }
+}
+
+/* Small Mobile Breakpoint 480px */
+@media (max-width: 480px) {
+    header .playfair {
+        font-size: 22px !important;
+    }
+
+    .hero .oranienbaum {
+        font-size: 36px !important;
+    }
+
+    .story-images {
+        grid-template-columns: 1fr !important;
+    }
+
+    .eat-together h2 {
+        font-size: 32px !important;
+    }
+
+    .carousel-container {
+        max-height: 250px !important;
+    }
+
+    .carousel-slide {
+        height: 250px !important;
+    }
+
+    .gallery-title h1 {
+        font-size: 36px !important;
+    }
+}
+
 /* Utility classes */
 .animate-slide-in-left {
     animation: slideInLeft 0.8s ease-out forwards;
